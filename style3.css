@@ -1,0 +1,161 @@
+marquee{
+    color: rgb(55, 236, 55);
+    font-size: 35px;
+    background-color: none;
+    margin: 4px;
+    border-radius: 10px;
+    
+
+}
+.annonce{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 4px;
+    background-color: rgb(238, 219, 219);
+    border-color: red;
+    border-radius: 20px;
+    left: -300px;
+}
+.paquet1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border: 8px;
+}
+.paquet1 img{
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+.detaille{
+    margin-left: 20px;
+
+}
+h5,h7{
+    color: #00bfff;
+
+}
+h6{
+    font-size: 14px;
+}
+h4{
+    color: green;
+}
+.achat{
+    background-color: #00bfff;
+    color:white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.achat:hover{
+    background-color: rgb(233, 13, 13);
+}
+.achat i {
+    margin-right: 10px;
+}
+button{
+    background-color: #00bfff;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    color: red;
+}
+* Barre de navigation */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1vw 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw; /* Utilisation de vw pour la taille du texte */
+    font-weight: bold;
+    padding: 2vh 4vw;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #00c6ff, #032a5a);
+    transition: all 0.3s ease;
+}
+
+/* Effet sur le survol des liens */
+.nav-link:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section "Bienvenu" */
+.bienvenu {
+    text-align: center;
+    font-size: 5vw; /* Taille du texte dynamique */
+    font-style: inherit;
+    color: white;
+    background-image: linear-gradient(to bottom, yellow, white);
+    height: 25vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 1vw 0;
+    margin-top: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.foot-link {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw; /* Utilisation de vw pour la taille du texte */
+    font-weight: bold;
+    padding: 2vh 4vw;
+    border-radius: 5px;
+    background: linear-gradient(green,) rgb(4, 48, 4);
+    transition: all 0.3s ease;
+}
+.foot-link:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+* Ajustement de la navbar */
+.foot {
+    padding: 2vh 0; /* Le padding s'adapte à la hauteur de l'écran */
+}
+
+.foot-link {
+    font-size: 2vw; /* La taille du texte change selon la largeur de l'écran */
+    padding: 2vh 5vw; /* Ajustement du padding pour plus de réactivité */
+}

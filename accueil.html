@@ -1,0 +1,53 @@
+<?php
+session_start();
+
+// Vérifier si l'utilisateur est connecté
+if (!isset($_SESSION['user_id'])) {
+    header("Location: connect.php"); // Rediriger vers la page de connexion si non connecté
+    exit;
+}
+
+// Récupérer le nom de l'utilisateur depuis la session
+$user_name = $_SESSION['user_name'];
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec barre de navigation</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        .bienvenu {
+    text-align: center;
+    font-size: 5vw; /* Taille du texte dynamique */
+    font-style: inherit;
+    color: white;
+    background-image: linear-gradient(to bottom, yellow, white);
+    height: 25vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <a href="#" class="nav-link">Recharger</a>
+        <a href="#" class="nav-link">Retirer</a>
+        <a href="#" class="nav-link">Partager</a>
+        <a href="#" class="nav-link">Canal</a>
+    </nav>
+
+    <!-- Section d'accueil -->
+    <div class="bienvenu">
+        <h3>Bienvenue <?php ($user_name); ?> !</h3>
+    </div>
+</body>
+</html>
