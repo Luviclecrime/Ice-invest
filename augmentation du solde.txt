@@ -1,0 +1,3 @@
+UPDATE users
+SET chances = chances + 1
+WHERE compte = ?;
